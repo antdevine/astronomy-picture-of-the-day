@@ -1,5 +1,3 @@
 <template>
-  <div>
-    <picture-of-the-day />
-  </div>
+  <NuxtPage />
 </template>
