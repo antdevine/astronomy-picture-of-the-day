@@ -17,7 +17,7 @@ const { data: apod, pending, error } = await useFetch('/api/apod');
         quality="80"
         loading="lazy"
         :alt="apod.title"
-        class="rounded-lg shadow-lg mb-6 max-h-[80vh] object-cover mx-auto"
+        class="rounded-lg shadow-lg mb-6 max-h-[80vh] object-cover mx-auto aspect-[16/9]"
         />
       <h1 class="text-xl md:text-3xl font-bold underline mb-2" v-if="apod.title">{{ apod.title }}</h1>
       <p v-if="apod.description" class="text-md md:text-lg">{{ apod.description }}</p>
